@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+<div class="container">
+
+  <form action="">
+
+    <!--Pendiente con el type porque si es text trata como un string incluso si se coloca number a las variables-->
+    Numero1: <input type="number" [(ngModel)]="numero1" name="numero1"><br/><br/> <!-- Dentro de un formulario es necesario colocar un name para identificarlo-->
+
+    Numero2: <input type="number" [(ngModel)]="numero2" name="numero2"><br/><br/>
+
+    <input type="submit" value="sumar" (click)="sumar()" class="btn btn-primary">
+    <input type="submit" value="restar" (click)="restar()" class="btn btn-primary">
+
+  </form>
+</div>
+
+<p>Resultado: {{resultado}}</p>
